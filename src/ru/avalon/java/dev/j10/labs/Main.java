@@ -1,19 +1,31 @@
 package ru.avalon.java.dev.j10.labs;
 
 import ru.avalon.java.dev.j10.labs.models.Person;
+import ru.avalon.java.dev.j10.labs.models.Passport;
+import ru.avalon.java.dev.j10.labs.commons.Address;
 
 public class Main {
 
-    Main() {
+    public static void Main () {
 
-        /*
-         * FIXME(Студент): Измените определение метода так, чтобы он стал точкой входа в приложение.
-         */
+     Person ivanov;
+     Person smith;
+     
 
-        Person ivanov = null;
-        Person smith = null;
-
-        /*
+    ivanov = new Person(new Address("Санкт-Петербург", "Ленина", 10, 15), 
+            new Passport(576383, "Иван", "Иванов", "Иванович", null, "15091994", "18092014", "Выдан отделением УФМС № 333"));
+   
+    smith = new Person(new Address("Москва", "Волгодонская", 6, 24), 
+            new Passport(475652, "John", "Smith", null, "Edvard", "12.01.1978", "16.02.18", "Выдан МВД №6"));
+    
+        
+    
+    System.out.println(ivanov.getFullName());
+    System.out.println(smith.getFullName());
+    System.out.println(ivanov.getAddress());
+    System.out.println(smith.getAddress());
+    
+       /*
          * TODO(Студент): Создайте экземпляры класса 'Person'
          *
          * 1. Проинициализируейте переменную 'ivanov', так,
@@ -25,6 +37,7 @@ public class Main {
          *    описывающий человека по имени 'John Edvard Smith'.
          */
 
+      
         /*
          * TODO(Студент): Создайте несколько строковых переменных:
          *
@@ -52,4 +65,4 @@ public class Main {
          * отдельной строке.
          */
     }
-}
+} 
