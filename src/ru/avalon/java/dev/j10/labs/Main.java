@@ -6,7 +6,7 @@ import ru.avalon.java.dev.j10.labs.commons.Address;
 
 public class Main {
 
-    public static void Main () {
+    public static void main (String[] args) {
 
      Person ivanov;
      Person smith;
